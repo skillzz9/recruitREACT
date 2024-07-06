@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import JobsPage from './pages/JobsPage';
 import MainLayout from './layouts/MainLayout';
 import NotFoundPage from './pages/NotFoundPage';
+import SingleJobPage, { jobLoader } from './pages/SingleJobPage';
 
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
 
@@ -12,8 +13,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />}>
     <Route index element={<HomePage />} />
-    <Route index path='/jobs' element={<JobsPage />} />
-    <Route index path='*' element={<NotFoundPage />} />
+    <Route path='/jobs' element={<JobsPage />} />
+    <Route path='/jobs/:id' element={<SingleJobPage/>} loader={jobLoader}/>
+    <Route path='*' element={<NotFoundPage />} />
+  
 
   </Route>
 ));
