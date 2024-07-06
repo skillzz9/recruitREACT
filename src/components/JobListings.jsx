@@ -1,11 +1,23 @@
 import React from 'react'
-import jobs from '../jobs.json';
 import JobListing from './JobListing';
-import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react';
 
 const JobListings = ({ isHome = false}) => {
-    const jobsListings = isHome ? jobs.jobs.slice(0,3) : jobs.jobs;
+
+    const [jobs, setJobs] = useState([]);
+    const [loading, setLoading] = useState(true);
     const jobsListingsText = isHome ? "Recent Jobs" : "All Jobs"
+
+    useEffect( () => {
+        const fetchJobs = async () => {
+            const res = await fetch('http://localhost:8000/jobs');
+            const data = await res.json();
+            setJobs(data);
+            setLoading(false);
+        }
+
+        fetchJobs();
+    }, []);
 
   return (
     <section className="bg-blue-50 px-4 py-10">
@@ -14,7 +26,7 @@ const JobListings = ({ isHome = false}) => {
             {jobsListingsText}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {jobsListings.map((job)=>(
+            {jobs.map((job)=>(
                 <JobListing key = {job.id} job = {job}></JobListing>
             ))}
           </div>
