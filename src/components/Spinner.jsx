@@ -1,5 +1,5 @@
 import React from 'react'
-import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 const override = {
     display: 'flex',
@@ -10,12 +10,12 @@ const override = {
 }
 const Spinner = ({loading}) => {
   return (
-    <ClimbingBoxLoader 
+    <ClipLoader 
     loading = {loading }
     cssOverride={override}
     size={20}>
 
-    </ClimbingBoxLoader>
+    </ClipLoader>
   )
 }
 
