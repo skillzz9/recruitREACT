@@ -13,9 +13,11 @@ Currently, two official plugins are available:
 To run the server that hosts the mock API, run 
 ```bash
 npm run server
+```
 
 Type in the command 
 ```bash
 npm run dev
+```
 
 Then click the link to open the host. 
