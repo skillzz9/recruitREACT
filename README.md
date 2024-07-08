@@ -15,6 +15,7 @@ git clone https://github.com/skillzz9/recruitREACT.git
 ```
 
 # How to run 
+cd into the directory where the git has been cloned. 
 
 To run the server that hosts the mock API, run 
 ```bash
