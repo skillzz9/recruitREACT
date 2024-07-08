@@ -20,7 +20,10 @@ npm install
 ```
 
 # How to run 
-cd into the directory where the git has been cloned. 
+cd into the directory
+```bash
+cd recruitREACT
+```
 
 To run the server that hosts the mock API, run 
 ```bash
