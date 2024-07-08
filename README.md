@@ -1,4 +1,7 @@
-# React + Vite
+# React + Vite Recruiter Website
+Welcome to my React + Vite project, designed for seamless development with modern tooling and rapid feedback cycles. It is a clone of a recruiter website where you can view, update, create and delete job listings all using a mock backend. 
+
+## Key Features
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -7,32 +10,29 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# How to install 
+# Installation Guide 
 
-Open a new directory and clone this git repository
+## Getting started
+- Clone repository 
 ```bash
 git clone https://github.com/skillzz9/recruitREACT.git
 ```
-
-ensure you install npm by using the comamnd
+- Install npm
 ```bash
 npm install
 ```
 
-# How to run 
-cd into the directory
+# Running the Project 
+- Navigate into project directory
 ```bash
 cd recruitREACT
 ```
-
-To run the server that hosts the mock API, run 
+- Simulate the backend
 ```bash
 npm run server
 ```
-
-Type in the command 
+- Launch the Developer Server
 ```bash
 npm run dev
 ```
-
-Then click the link to open the host. 
+- Open the link provided
