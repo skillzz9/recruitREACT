@@ -14,6 +14,11 @@ Open a new directory and clone this git repository
 git clone https://github.com/skillzz9/recruitREACT.git
 ```
 
+ensure you install npm by using the comamnd
+```bash
+npm install
+```
+
 # How to run 
 cd into the directory where the git has been cloned. 
 
